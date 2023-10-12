@@ -64,19 +64,19 @@ loadBackgroundData();
 // start cahnging the backgroung
 let localBackgroundImage;
  if(localBackgroundImage===null){
-  localBackgroundImage=localStorage.setItem("localBackgroundImage",`url("images/le-louvi.jpg")`);
+  localBackgroundImage=localStorage.setItem("localBackgroundImage",`url("../images/le-louvi.jpg")`);
  }
 let landing=document.querySelector(".landing");
 let myImages=["billiard-table.jpg","football-game.jpg","le-louvi.jpg","old-door.jpg","rose.jpg"];
 
  let changingBackground=setInterval(()=>{
  let random=Math.floor(Math.random() * 5);
- landing.style.backgroundImage= `url("images/${myImages[random]}")`;
+ landing.style.backgroundImage= `url("../images/${myImages[random]}")`;
  if(localBackgroundImage===null){
-  localBackgroundImage=localStorage.setItem("localBackgroundImage",`url("images/le-louvi.jpg")`);
+  localBackgroundImage=localStorage.setItem("localBackgroundImage",`url("../images/le-louvi.jpg")`);
  }
  else{
- localBackgroundImage=localStorage.setItem("localBackgroundImage",`url("images/${myImages[random]}")`);}
+ localBackgroundImage=localStorage.setItem("localBackgroundImage",`url("../images/${myImages[random]}")`);}
  landing.style.backgroundSize="cover";
   landing.style.backgroundPosition="cetner";
 
@@ -150,7 +150,7 @@ e.addEventListener("click",e=>{
  else if(e.target.classList.contains("on")){
  changingBackground=setInterval(()=>{
  random=Math.floor(Math.random() * 5);
- landing.style.backgroundImage= `url("images/${myImages[random]}")`;
+ landing.style.backgroundImage= `url("../images/${myImages[random]}")`;
  landing.style.backgroundSize="cover";
  landing.style.backgroundPosition="cetner";
 }
