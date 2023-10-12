@@ -748,7 +748,7 @@ span.X{
 .time-line .time-line-content .right,
   .time-line .time-line-content .left {
     width: 100%;
-
+    text-align: center;
     align-items: center;
     z-index: 3;
     margin-inline: auto;
