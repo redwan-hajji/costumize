@@ -71,7 +71,9 @@ let myImages=["billiard-table.jpg","football-game.jpg","le-louvi.jpg","old-door.
 
  let changingBackground=setInterval(()=>{
  let random=Math.floor(Math.random() * 5);
- landing.style.backgroundImage= `url("../images/${myImages[random]}")`;
+ landing.style.backgroundImage= `url(../images/${myImages[random]})`;
+ console.log(`url(../images/${myImages[random]})`);
+ console.log(" url(/images/le-louvi.jpg);")
  if(localBackgroundImage===null){
   localBackgroundImage=localStorage.setItem("localBackgroundImage",`url("../images/le-louvi.jpg")`);
  }
@@ -150,7 +152,7 @@ e.addEventListener("click",e=>{
  else if(e.target.classList.contains("on")){
  changingBackground=setInterval(()=>{
  random=Math.floor(Math.random() * 5);
- landing.style.backgroundImage= `url("../images/${myImages[random]}")`;
+ landing.style.backgroundImage= `url(../images/${myImages[random]})`;
  landing.style.backgroundSize="cover";
  landing.style.backgroundPosition="cetner";
 }
