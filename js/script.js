@@ -64,7 +64,7 @@ loadBackgroundData();
 // start cahnging the backgroung
 let localBackgroundImage;
  if(localBackgroundImage===null){
-  localBackgroundImage=localStorage.setItem("localBackgroundImage",`url("../images/le-louvi.jpg")`);
+  localBackgroundImage=localStorage.setItem("localBackgroundImage",`url(../images/le-louvi.jpg)`);
  }
 let landing=document.querySelector(".landing");
 let myImages=["billiard-table.jpg","football-game.jpg","le-louvi.jpg","old-door.jpg","rose.jpg"];
@@ -75,10 +75,10 @@ let myImages=["billiard-table.jpg","football-game.jpg","le-louvi.jpg","old-door.
  console.log(`url(../images/${myImages[random]})`);
  console.log(" url(/images/le-louvi.jpg);")
  if(localBackgroundImage===null){
-  localBackgroundImage=localStorage.setItem("localBackgroundImage",`url("../images/le-louvi.jpg")`);
+  localBackgroundImage=localStorage.setItem("localBackgroundImage",`url(../images/le-louvi.jpg)`);
  }
  else{
- localBackgroundImage=localStorage.setItem("localBackgroundImage",`url("../images/${myImages[random]}")`);}
+ localBackgroundImage=localStorage.setItem("localBackgroundImage",`url(../images/${myImages[random]})`);}
  landing.style.backgroundSize="cover";
   landing.style.backgroundPosition="cetner";
 
